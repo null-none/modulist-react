@@ -1,0 +1,5 @@
+.idea
+.DS_*
+.vscode
+debug.log
+node_modules
