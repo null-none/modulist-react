@@ -641,6 +641,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@modulist/css@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@modulist/css/-/css-1.0.0-alpha.6.tgz#8fbd81f4aa701696207c4619c842d18c51a1c955"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"

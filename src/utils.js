@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 let globalCssModule;
 
@@ -6,22 +6,35 @@ export function setGlobalCssModule(cssModule) {
   globalCssModule = cssModule;
 }
 
-export function mapToCssModules(className = '', cssModule = globalCssModule) {
+export function mapToCssModules(className = "", cssModule = globalCssModule) {
   if (!cssModule) return className;
   return className
-    .split(' ')
+    .split(" ")
     .map(c => cssModule[c] || c)
-    .join(' ');
+    .join(" ");
 }
 
 export const tagPropType = PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.string,
-    PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func }),
-    PropTypes.arrayOf(PropTypes.oneOfType([
+  PropTypes.func,
+  PropTypes.string,
+  PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func }),
+  PropTypes.arrayOf(
+    PropTypes.oneOfType([
       PropTypes.func,
       PropTypes.string,
-      PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func }),
-    ]))
+      PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func })
+    ])
+  )
 ]);
 
+let warned = {};
+
+export function warnOnce(message) {
+  if (!warned[message]) {
+    /* istanbul ignore else */
+    if (typeof console !== "undefined") {
+      console.error(message); // eslint-disable-line no-console
+    }
+    warned[message] = true;
+  }
+}

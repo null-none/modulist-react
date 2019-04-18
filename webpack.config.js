@@ -54,7 +54,7 @@ const config = {
   resolve: {
     extensions: ['.js', '.json'],
     alias: {
-      'modulist-css': path.join(__dirname, 'node_modules/modulist-css/blob/master/dist/modulist.css'),
+      'modulist-css': path.join(__dirname, 'node_modules/@modulist/css/dist/modulist.css'),
       modulist: path.resolve('./src')
     }
   }
