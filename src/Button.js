@@ -70,7 +70,7 @@ class Button extends React.Component {
         className={classes}
         ref={innerRef}
         onClick={this.onClick}
-        aria-label={ariaLabel || defaultAriaLabel}
+        aria-label={ariaLabel}
       />
     );
   }
