@@ -53,6 +53,8 @@ class Input extends React.Component {
       cssModule,
       type,
       bsSize,
+      selectInput,
+      textareaInput,
       valid,
       invalid,
       tag,

@@ -52,7 +52,7 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.json'],
+    extensions: ['.js', '.json', '.css'],
     alias: {
       'modulist-css': path.join(__dirname, 'node_modules/@modulist/css/dist/modulist.css'),
       modulist: path.resolve('./src')
