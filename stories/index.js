@@ -16,6 +16,19 @@ storiesOf("Badge", module).add("Example", () => (
   </div>
 ));
 
+storiesOf("Box", module).add("Default", () => (
+  <div>
+    <Box>Default</Box>
+  </div>
+));
+
+storiesOf("Input", module).add("Default", () => (
+  <div>
+    <Input placeholder="Placeholder" />
+  </div>
+));
+
+
 storiesOf("Button", module)
   .add("Appearance", () => (
     <div>
@@ -46,9 +59,3 @@ storiesOf("Button", module)
       </Button>
     </div>
   ));
-
-storiesOf("Input", module).add("Default", () => (
-  <div>
-    <Input placeholder="Placeholder" />
-  </div>
-));
