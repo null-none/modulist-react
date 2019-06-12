@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import { Button, Input, Badge } from "../src/index";
+import { Button, Input, Badge, Box } from "../src/index";
 
 require("../node_modules/@modulist/css/dist/modulist.css");
 
@@ -27,7 +27,6 @@ storiesOf("Input", module).add("Default", () => (
     <Input placeholder="Placeholder" />
   </div>
 ));
-
 
 storiesOf("Button", module)
   .add("Appearance", () => (
