@@ -13,7 +13,7 @@ npm install modulist-react
 - [x] Box
 - [x] Input
 - [x] Button
-- [ ] Alert
+- [x] Alert
 - [ ] Avatar
 - [ ] Checkbox
 - [ ] Menu

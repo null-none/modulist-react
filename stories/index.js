@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import { Button, Input, Badge, Box } from "../src/index";
+import { Button, Input, Badge, Box, Alert } from "../src/index";
 
 require("../node_modules/@modulist/css/dist/modulist.css");
 
@@ -58,3 +58,11 @@ storiesOf("Button", module)
       </Button>
     </div>
   ));
+
+storiesOf("Alert", module).add("Default", () => (
+  <div>
+    <Alert color="info" title="Data was updated" text="Some information was updated today. Please check carefully." />
+    <Alert color="warn" title="Data was updated" text="Some information was updated today. Please check carefully." />
+    <Alert color="error" title="Data was updated" text="Some information was updated today. Please check carefully." />
+  </div>
+));
